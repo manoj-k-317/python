@@ -1,8 +1,13 @@
-#shopping cart program
+#print("hello python!")
 
-item = str(input("enter what you have purchased: "))
-price = float(input("enter the price rate of the product: "))
-quantity = int(input("enter the total number of items you have purchased: "))
+#-variables-
+#name = "manoj" #str
+#age = 21 #int
+#cgpa = 8.1 #float
+#arrears = False #boolean
 
-print(f"you have purchased {quantity} {item}")
-print(f"which in total costs {price*quantity}")
+#-type casting-
+#print(type(age)) #to check the datatype
+#age = float(age) #to change the datatype
+#print(type(age))
+
