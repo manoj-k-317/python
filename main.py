@@ -9,13 +9,12 @@
 #-type casting-
 #print(type(age))       #to check the datatype
 #age = float(age)       #to change the datatype
-#print(type(age))
 
 #-arithmetic operations-
 #number = 5
 #number += 3        #addition
 #number -= 3        #subtraction
-#number *= 3        #multipilication
+#number *= 3        #multiplication
 #number /= 3        #division
 #number %= 3        #modulus
 #number **=2        #exponent(power)
@@ -34,4 +33,4 @@
 #print(math.sqrt(144))          #square root
 #print(math.ceil(7.5))          #round up
 #print(math.floor(7.5))         #round down
-#print(round(circumstance, 3))  #round & cut off certain digits after point (1.23456789 -> 1.234)
+#print(round(circumstance, 3))  #round & cut off certain digits after point [1.23456789 -> 1.234]
