@@ -11,3 +11,12 @@
 #age = float(age) #to change the datatype
 #print(type(age))
 
+#-arithmetic operations-
+#number = 18
+#number += 3
+#number -= 3
+#number *= 3
+#number /= 3
+#number //= 3
+#number %= 3
+
