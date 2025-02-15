@@ -1,3 +1,7 @@
-#this file exixts in main branch
+age = 12
+print(type(age))
+print(age)
 
-#test dummy
+age = float(age)
+print(type(age))
+print(age)
