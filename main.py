@@ -42,3 +42,8 @@
     #print()
 #else:
     #print()
+
+#-logical operators-
+#and        #all conditions must be true 
+#or         #atleast one condition must be true
+#not        #inverts the condition (true -> false & false -> true)
