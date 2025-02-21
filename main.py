@@ -60,7 +60,7 @@
 #name.capitalize()              #returns the first letter in caps
 #name.upper()                   #converts entire string to upper case
 #name.lower()                   #converts entire strinb to lower case
-#name.isdigit()                 #returns true if string contains only numbers
-#name.isalpha()                 #returns true if string contains only letters
+#name.isdigit()                 #returns true if string contains only numbers (false if mixed with numbers and letters)
+#name.isalpha()                 #returns true if string contains only letters (false if contains number or spaces)
 #name.count("h")                #counts the no. of occurances of the character
 #name.replace("h", "g")         #replaces one with another
