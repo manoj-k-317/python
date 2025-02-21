@@ -35,4 +35,10 @@
 #print(math.floor(7.5))         #round down
 #print(round(circumstance, 3))  #round & cut off certain digits after point [1.23456789 -> 1.234]
 
-#-if conditions-
+#-if, else if, else conditions-
+#if condition :
+    #print()
+#elseif:
+    #print()
+#else:
+    #print()
