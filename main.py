@@ -51,3 +51,16 @@
 #-conditional expression-
 # "X" if condition else "Y"     #one line shortcut for if else statemnet 
 #print("positive" if num > 0 else "negative")
+
+#-string methods-
+#name = "manoj"                 
+#len(name)                      #returns the lenght of the string
+#name.find("a")                 #finds the first occurance of the character
+#name.rfind("a")                #finds the last occurance of the character
+#name.capitalize()              #returns the first letter in caps
+#name.upper()                   #converts entire string to upper case
+#name.lower()                   #converts entire strinb to lower case
+#name.isdigit()                 #returns true if string contains only numbers
+#name.isalpha()                 #returns true if string contains only letters
+#name.count("h")                #counts the no. of occurances of the character
+#name.replace("h", "g")         #replaces one with another
