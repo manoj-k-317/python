@@ -63,4 +63,14 @@
 #name.isdigit()                 #returns true if string contains only numbers (false if mixed with numbers and letters)
 #name.isalpha()                 #returns true if string contains only letters (false if contains number or spaces)
 #name.count("h")                #counts the no. of occurances of the character
-#name.replace("h", "g")         #replaces one with another
+#name.replace("o", "g")         #replaces one with another
+
+#-string indexing-          #accessing elements of a string  [start : end : step]
+#numbers = "123-456-789-012"
+#print(numbers[0])          #to print one charcter based on ondex value
+#print(numbers[:5])         #to print a range of characters (start to X)
+#print(numbers[3:])         #to print a range of characters (X to end)
+#print(numbers[4:8])        #to print a range of characters (X to Y)
+#print(numbers[-1])         #to print in reverse
+#print(numbers[2:8:3])      #to print a range with a specific step count
+
