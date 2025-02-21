@@ -47,3 +47,7 @@
 #and        #all conditions must be true 
 #or         #atleast one condition must be true
 #not        #inverts the condition (true -> false & false -> true)
+
+#-conditional expression-
+# "X" if condition else "Y"     #one line shortcut for if else statemnet 
+#print("positive" if num > 0 else "negative")
