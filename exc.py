@@ -1,7 +1,5 @@
-age = 12
-print(type(age))
-print(age)
-
-age = float(age)
-print(type(age))
-print(age)
+age = int(input("enter your age: "))
+if age >= 18:
+    print("you are eligible for voting!")
+else:
+    print("you are not eligible for voting!")
