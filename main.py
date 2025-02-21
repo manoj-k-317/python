@@ -38,7 +38,7 @@
 #-if, else if, else conditions-
 #if condition :
     #print()
-#elseif:
+#elif:
     #print()
 #else:
     #print()
