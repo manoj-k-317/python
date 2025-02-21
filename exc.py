@@ -1,43 +1,15 @@
 #this file exixts in sub branch
 
-operator = input("Pls enter an operator (+ - * / %): ")
+unit = input("kilograms of grams (kg or g)?: ")
 
-if operator == "+":
-    print("Addition operation initiated")
-    a = int(input("enter value for (a): " ))
-    b = int(input("enter value for (b): " ))
-    print ("processing addition")
-    c = a+b
-    print(f"{a} + {b} = {c}")
-elif operator == "-":
-    print("Subtraction operation initiated")
-    a = int(input("enter value for (a): " ))
-    b = int(input("enter value for (b): " ))
-    print ("processing subtraction")
-    if a>b:
-        c = a-b
-        print(f"{a} - {b} = {c}")
-    elif b>a:
-        c = b-a
-        print(f"{b} - {a} = {c}")
-if operator == "*":
-    print("Multiplication operation initiated")
-    a = int(input("enter value for (a): " ))
-    b = int(input("enter value for (b): " ))
-    print ("processing multiploication")
-    c = a*b
-    print(f"{a} * {b} = {c}")
-if operator == "/":
-    print("Division operation initiated")
-    a = int(input("enter value for (a): " ))
-    b = int(input("enter value for (b): " ))
-    print ("processing multiploication")
-    c = a/b
-    print(f"{a} / {b} = {c}")
-if operator == "%":
-    print("Reminder operation initiated")
-    a = int(input("enter value for (a): " ))
-    b = int(input("enter value for (b): " ))
-    print ("processing multiploication")
-    c = a%b
-    print(f"{a} % {b} = {c}")
+if unit == "kg":
+    print("coverting grams to kilograms")
+    weight = float(input("Enter your wight in grams: "))
+    result = weight / 1000
+    print(f"{result} kilograms")
+
+elif unit == "g":
+    print("coverting kilograms to grams")
+    weight = float(input("Enter your wight in grams: "))
+    result = weight * 1000
+    print(f"{result} grams")
