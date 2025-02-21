@@ -73,4 +73,4 @@
 #print(numbers[4:8])        #to print a range of characters (X to Y)
 #print(numbers[-1])         #to print in reverse
 #print(numbers[2:8:3])      #to print a range with a specific step count
-
+#print(numbers[::-1])       #to print the strings in reverse
