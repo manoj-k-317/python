@@ -1,3 +1,1 @@
-#this file exixts in sub branch
-
-name = str(input("Enter your name please: "))
+#this file exixts in main branch

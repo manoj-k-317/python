@@ -19,14 +19,14 @@
 #number %= 3        #modulus
 #number **=2        #exponent(power)
 
-#-math funtions- part 1 
+#-math funtions - part 1 
 #result = round(num)            #round off
 #result = abs(num)              #absolute value
 #result = pow(num, 2)           #power
 #result = min(num1,num2,num3)   #minimum
 #result = max(num1,num2,num3)   #maximum
 
-#-math funtions- part 2
+#-math funtions - part 2
 #import math                    #module import
 #print(math.pi)                 #pi value
 #print(math.e)                  #exponential constant value
@@ -35,3 +35,4 @@
 #print(math.floor(7.5))         #round down
 #print(round(circumstance, 3))  #round & cut off certain digits after point [1.23456789 -> 1.234]
 
+#-if conditions-
