@@ -35,7 +35,7 @@
 #print(math.floor(7.5))         #round down
 #print(round(circumstance, 3))  #round & cut off certain digits after point [1.23456789 -> 1.234]
 
-#-if, else if, else conditions-
+#-if, else if, else conditions-     #condition true, then execute
 #if condition :
     #print()
 #elif:
@@ -84,3 +84,9 @@
 #print(f"value is {value:>10}")      #right align
 #print(f"value is {value:^10}")      #center align
 #print(f"value is {value:,}")        #1000s value seperator
+
+#-while loop-               #while loops executes if the condition remains true
+#while condition:
+    #execute                #if while is true
+    #break point
+#execute                    #if while is false
