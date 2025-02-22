@@ -71,6 +71,16 @@
 #print(numbers[:5])         #to print a range of characters (start to X)
 #print(numbers[3:])         #to print a range of characters (X to end)
 #print(numbers[4:8])        #to print a range of characters (X to Y)
-#print(numbers[-1])         #to print in reverse
+#print(numbers[-1])         #to print from reverse
 #print(numbers[2:8:3])      #to print a range with a specific step count
 #print(numbers[::-1])       #to print the strings in reverse
+
+#-format specifiers-                #values formatted based of flags -> {value:flag}
+#value = 1244.3862
+#print(f"value is {value:.2f}")      #prcision decimal point
+#print(f"value is {value:10}")       #space before value
+#print(f"value is {value:010}")      #zero padding before value
+#print(f"value is {value:<10}")      #left align
+#print(f"value is {value:>10}")      #right align
+#print(f"value is {value:^10}")      #center align
+#print(f"value is {value:,}")        #1000s value seperator
