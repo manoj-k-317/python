@@ -1,9 +1,22 @@
 #this file exixts in sub branch
-import time
-mytime = int(input("enter your time: "))
-for i in reversed(range (1, mytime)):
-    time.sleep(1)
-    seconds = int(i%60)
-    minutes = int(i/60)%60
-    hours = int(i/3600)
-    print(f"{hours:02}:{minutes:02}:{seconds:02}")
+
+foods = []
+prices = []
+total = 0
+
+while True:
+    food = input("enter a food to buy: ")
+    if food.lower() == "q":
+        break
+    else:
+        price = float(input(f"enter the price of the {food}: "))
+        foods.append(food) 
+        prices.append(price)
+
+print("--------YOUR CART IS READY --------")
+for food in foods:
+    print(food, end=" ")
+for price in prices:
+    total += price
+print()
+print(total)
