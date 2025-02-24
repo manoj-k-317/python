@@ -99,3 +99,22 @@
 #break                          #to stop at something
 
 #-nested loop               #loop within a loop
+
+#-collection-                                    #single variable contains multiple values
+#list []                                         #ordered and changeable. accepts duplicates   
+#names = ["silver", "drake", "jenn", "brave"]
+#names[3] = "colden"
+#names.append("brave")
+#names.remove("brave")
+#print(names)
+
+#set {}                                          #unordered and unchangeable. but can add/remove. no duplicates
+#names = {"silver", "drake", "jenn"}
+#names.add("brave")
+#names.remove("brave")
+#print(names)
+
+#tuple ()                                        #ordered but unchangeable. accepts duplicates
+#similar to both list and set
+#ordered characteristics from list 
+#unchangeable characteristics from set
