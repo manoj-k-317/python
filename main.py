@@ -118,3 +118,9 @@
 #similar to both list and set
 #ordered characteristics from list 
 #unchangeable characteristics from set
+
+#-2D collection-                            #list/set/tuple consists of anthoer list/set/tuple
+#list_1 = ["a","b","c"]                     #supports all fuctions respectively
+#list_2 = ["x","y","z"]
+#list_3 = ["1","2","3"]
+#list = [list_1, list_2, list_3]
