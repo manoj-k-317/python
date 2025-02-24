@@ -1,22 +1,12 @@
 #this file exixts in sub branch
 
-foods = []
-prices = []
-total = 0
+row_1 = ["1","2","3"]
+row_2 = ["4","5","6"]
+row_3 = ["7","8","9"]
+row_4 = ["#","0","*"]
 
-while True:
-    food = input("enter a food to buy: ")
-    if food.lower() == "q":
-        break
-    else:
-        price = float(input(f"enter the price of the {food}: "))
-        foods.append(food) 
-        prices.append(price)
-
-print("--------YOUR CART IS READY --------")
-for food in foods:
-    print(food, end=" ")
-for price in prices:
-    total += price
-print()
-print(total)
+num_pad = [row_1, row_2, row_3, row_4]
+for row in num_pad:
+    for num in row:
+        print(num, end=" ")
+    print()
