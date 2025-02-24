@@ -1,5 +1,8 @@
 #this file exixts in sub branch
+import time
 
-card = "1234-5678-9012-3456"
-for x in card:
-    print(x)
+for i in reversed(range(1,11)):
+    time.sleep(1)
+    print(i)
+
+print("happy new year!!!")
