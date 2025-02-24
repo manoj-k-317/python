@@ -91,6 +91,10 @@
     #break point
 #execute                    #if while is false
 
-#-for loops-                #for loops execute for a fixed no. of times
-#for x in range (1,10):
+#-for loops-                    #for loops execute for a fixed no. of times
+#for x in range (1,10):         #normal
+#for x in reversed(range(1,10)):#reversed
     #print(x)
+
+#continue                       #to skip something
+#break                          #to stop at something

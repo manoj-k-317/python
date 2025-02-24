@@ -1,4 +1,7 @@
 #this file exists in main branch
-for x in reversed(range(1,11,3)):
-    print(f"roll no.{x}")
-print("happy birthday!")
+card = "1234-5678-9012-3456"
+for n in card:
+    if n == "-":
+        break
+    else:
+        print(n)
