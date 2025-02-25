@@ -1,33 +1,51 @@
 #this file exixts in sub branch
 
-menu = {"popcorn":160,
-        "drinks":190,
-        "fries":150,
-        "water":60,
-        "ice":130,
-        "sandwich":130}
+import random
+opn = ("rock", "paper", "scissors")
+#system_opn = random.choice(opn)
+user_opn = (input("enter your option: ")).lower()
 
-cart = []
-total = 0
-items = menu.items()
-
-print("------ M E N U ------")
-for key, value in items:
-    print(f"{key:<10} rs:{value}/-")
-print("make sure to to type correctly")
+score = 0
 
 while True:
-    food = input("type in what you need or press q to quit: ").lower()
-    if food == "q":
+    system_opn = random.choice(opn)
+
+    while user_opn not in opn:
+        user_opn = (input("pls enter a valid option: ")).lower()
         break
-    elif menu.get(food) is not None:
-        cart.append(food)
-    elif menu.get(food) is None:
-        print(f"sorry, {food} is not availabe")
 
-for food in cart:
-    print(food)
-    total += menu.get(food)
+    if user_opn == "q":
+        print("game quit")
+        break
 
-print()
-print(f"your total is {total}")
+    print(f"user's choice is {user_opn}")
+    print(f"system's choice is {system_opn}")
+    
+    if user_opn == "rock" and system_opn == "rock":
+        print("--- DRAW ---")
+        user_opn = (input("playing again! enter your option: ")).lower()
+    elif user_opn == "paper" and system_opn == "paper":
+        print("--- DRAW ---")
+        user_opn = (input("playing again! enter your option: ")).lower()
+    elif user_opn == "scissors" and system_opn == "scissors":
+        print("--- DRAW ---")
+        user_opn = (input("playing again! enter your option: ")).lower()
+    elif user_opn == "rock" and system_opn == "paper":
+        print("--- USER WON ---")
+        user_opn = (input("playing again! enter your option: ")).lower()
+    elif user_opn == "rock" and system_opn == "scissors":
+        print("--- USER WON ---")
+        user_opn = (input("playing again! enter your option: ")).lower()
+    elif user_opn == "paper" and system_opn == "rock":
+        print("--- SYSTEM WON ---")
+        user_opn = (input("playing again! enter your option: ")).lower()
+    elif user_opn == "paper" and system_opn == "scissors":
+        print("--- SYSTEM WON ---")
+        user_opn = (input("playing again! enter your option: ")).lower()
+    elif user_opn == "scissors" and system_opn == "rock":
+        print("--- SYSTEM WON ---")
+        user_opn = (input("playing again! enter your option: ")).lower()
+    elif user_opn == "scissors" and system_opn == "paper":
+        print("--- USER WON ---")
+        user_opn = (input("playing again! enter your option: ")).lower()
+
