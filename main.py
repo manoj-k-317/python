@@ -136,3 +136,10 @@
 #for key, value in info.items:
     #print(f"{key}:{value}")
 
+#-random numbers-
+#import random                               #import module
+#print(random.randint(1,10))                 #to print random numbers in a range
+# collection = ["rock", "paper", "siccors"]
+#print(random.choice(collection))            #to print random from collection
+#random.shuffle(collection)                  #returns the full collection but shuffled
+#print(collection)
