@@ -127,7 +127,7 @@
 
 #-collections part 2-
 #dictionary                     #{key:value} pairs of ordered and unchangeable values and no duplicates
-info = {"mondstad":"anemo","liyue":"geo","inazuma":"electro","sumeru":"dendro"}
+#info = {"mondstad":"anemo","liyue":"geo","inazuma":"electro","sumeru":"dendro"}
 #print(info.get("inzauma"))              #to get the 'value' by calling the 'key'
 #print(info.update({"fontaine:hydro"}))  #to update used to add and/or update an existing pair
 #print(info.keys())                      #to get the 'keys' of the pairs
@@ -135,3 +135,4 @@ info = {"mondstad":"anemo","liyue":"geo","inazuma":"electro","sumeru":"dendro"}
 #print(info.items())                     #to get the 2D collection type of {key:value} pairs
 #for key, value in info.items:
     #print(f"{key}:{value}")
+
