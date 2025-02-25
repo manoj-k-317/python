@@ -1,51 +1,56 @@
 #this file exixts in sub branch
-
+# ●  ┌  ─  ┐  │  └  ┘
 import random
-opn = ("rock", "paper", "scissors")
-#system_opn = random.choice(opn)
-user_opn = (input("enter your option: ")).lower()
+"-----------"
+"|         |"
+"|         |"
+"|         |"
+"-----------"
 
-score = 0
+die_art = {1:("-----------",
+              "|         |",
+              "|    1    |",
+              "|         |",
+              "-----------"),
+            2:("-----------",
+               "|2        |",
+               "|         |",
+               "|        2|",
+               "-----------"),
+            3:("-----------",
+              "|3        |",
+              "|    3    |",
+              "|        3|",
+              "-----------"),
+            4:("-----------",
+               "|4       4|",
+               "|         |",
+               "|4       4|",
+               "-----------"),
+            5:("-----------",
+               "|5       5|",
+               "|    5    |",
+               "|5       5|",
+               "-----------"),
+            6:("-----------",
+               "|6       6|",
+               "|6       6|",
+               "|6       6|",
+               "-----------")}
 
-while True:
-    system_opn = random.choice(opn)
+dice = []
+num_dice = int(input("enter the amount of dice: "))
+total = 0
+for die in range(num_dice):
+    dice.append(random.randint(1,6))
+print(dice)
 
-    while user_opn not in opn:
-        user_opn = (input("pls enter a valid option: ")).lower()
-        break
-
-    if user_opn == "q":
-        print("game quit")
-        break
-
-    print(f"user's choice is {user_opn}")
-    print(f"system's choice is {system_opn}")
-    
-    if user_opn == "rock" and system_opn == "rock":
-        print("--- DRAW ---")
-        user_opn = (input("playing again! enter your option: ")).lower()
-    elif user_opn == "paper" and system_opn == "paper":
-        print("--- DRAW ---")
-        user_opn = (input("playing again! enter your option: ")).lower()
-    elif user_opn == "scissors" and system_opn == "scissors":
-        print("--- DRAW ---")
-        user_opn = (input("playing again! enter your option: ")).lower()
-    elif user_opn == "rock" and system_opn == "paper":
-        print("--- USER WON ---")
-        user_opn = (input("playing again! enter your option: ")).lower()
-    elif user_opn == "rock" and system_opn == "scissors":
-        print("--- USER WON ---")
-        user_opn = (input("playing again! enter your option: ")).lower()
-    elif user_opn == "paper" and system_opn == "rock":
-        print("--- SYSTEM WON ---")
-        user_opn = (input("playing again! enter your option: ")).lower()
-    elif user_opn == "paper" and system_opn == "scissors":
-        print("--- SYSTEM WON ---")
-        user_opn = (input("playing again! enter your option: ")).lower()
-    elif user_opn == "scissors" and system_opn == "rock":
-        print("--- SYSTEM WON ---")
-        user_opn = (input("playing again! enter your option: ")).lower()
-    elif user_opn == "scissors" and system_opn == "paper":
-        print("--- USER WON ---")
-        user_opn = (input("playing again! enter your option: ")).lower()
-
+if dice == 1:
+    print("-----------",
+          "|         |",
+          "|    1    |",
+          "|         |",
+          "-----------")
+for die in dice:
+    total += die
+print(total)
